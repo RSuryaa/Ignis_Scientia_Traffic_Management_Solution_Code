@@ -1,7 +1,7 @@
 #include <RH_ASK.h>
 #include <SPI.h> // Not actually used but needed to compile
 RH_ASK driver;
-
+//Transmit at pin 11; receive at pin 12;
 const uint8_t maxMessageSize = 50; // Maximum message size
 
 uint8_t buf[maxMessageSize];
