@@ -1,6 +1,6 @@
 #include <RH_ASK.h>
 #include <SPI.h> // Not actually used but needed to compile
-
+//Transmit at pin 11; receive at pin 12;
 RH_ASK driver;
 
 void setup()
