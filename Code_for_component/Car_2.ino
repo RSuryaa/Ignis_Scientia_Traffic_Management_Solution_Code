@@ -55,10 +55,6 @@ void loop() {
     // Reset buflen to the size of the buffer for the next message
     buflen = sizeof(buf);
   }
-  digitalWrite(7, LOW);
-  delay(1000);
-  digitalWrite(7, HIGH);
-  delay(1000);
 }
 
 bool isPrintableChar(uint8_t c) {
