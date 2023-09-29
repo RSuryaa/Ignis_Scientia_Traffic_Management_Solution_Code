@@ -65,9 +65,6 @@ void loop() {
     if (strcmp(myChar, "Green Signal") == 0) {
       digitalWrite(7, HIGH);
     }
-    else if(strcmp(myChar, "Green Signal - Car 1") == 0){
-      digitalWrite(7, HIGH);
-    }
     else{
       Serial.println("Fail");
       digitalWrite(7, LOW);
