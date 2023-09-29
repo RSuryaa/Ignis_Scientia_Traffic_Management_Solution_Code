@@ -9,14 +9,14 @@ void setup()
     if (!driver.init())
          Serial.println("init failed");
 }
-char Lol[30]="Red Signal";
-char Haha[30]="Green Signal";
+char Red[30]="Red Signal";
+char Green[30]="Green Signal";
 void loop()
 {
-  transmit(Lol);
-  delay(2000);
-  transmit(Haha);
-  delay(2000);
+  transmit(Red);
+  delay(10000);
+  transmit(Green);
+  delay(10000);
 }
 void transmit(char *data)
 {
