@@ -59,12 +59,18 @@ void loop() {
       }
     }
     Serial.println();
-    
+    if(strcmp(myChar, "Green Signal")==0){
+      digitalWrite(7, HIGH);
+    }
+    else{
+      digitalWrite(7, LOW);
+    }
     // Reset buflen to the size of the buffer for the next message
     buflen = sizeof(buf);
     strcat(myChar, TM);
     transmit(myChar);
   }
+  
 }
 
 bool isPrintableChar(uint8_t c) {
