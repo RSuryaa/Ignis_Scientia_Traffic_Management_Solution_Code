@@ -62,7 +62,7 @@ void loop() {
     strcat(myChar, TM);
     transmit(myChar);
 
-    if (strcmp(myChar, "Green Signal") == 0) {
+    if (strcmp(myChar, "Green Signal - Car 1") == 0) {
       digitalWrite(7, HIGH);
     }
     else{
